@@ -1,0 +1,6 @@
+git init
+git checkout -b main
+git checkout -b develop
+echo ".env" >> .gitignore
+git add .
+git commit -m "Ініціалізація проєкту"
