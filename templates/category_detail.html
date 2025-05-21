@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Категорія: {{ category.name }}</title></head>
+<body>
+    <h1>Рецепти в категорії "{{ category.name }}"</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>{{ recipe.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
