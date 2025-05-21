@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Головна</title></head>
+<body>
+    <h1>10 випадкових рецептів</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>{{ recipe.name }} ({{ recipe.category.name }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
